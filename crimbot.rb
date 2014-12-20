@@ -1,5 +1,4 @@
-require 'pry'
-require 'active_support'
+#require 'pry'
 require './adventure'
 require './bot'
 
@@ -255,7 +254,7 @@ end
 bot = Bot.new({right: :power_stapler, left: :swiss_arm, torso: :military_chassis, legs: :hoverjack})
 
 total = 0.0
-runs = 1000000
+runs = 100000
 
 runs.times do
   adventure = Adventure.new(bot, true)

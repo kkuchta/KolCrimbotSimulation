@@ -2,7 +2,7 @@ class Adventure
   def initialize(bot, go_up)
     @bot = bot
     unless bot.meets_requirements([:pinch])
-      #raise "Bot needs pinch"
+      raise "Bot needs pinch"
     end
     @go_up = go_up
   end
